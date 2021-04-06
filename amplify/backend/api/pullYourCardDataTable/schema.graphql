@@ -1,0 +1,25 @@
+type dataTableNew @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  License_SL_No: Int
+  License_Type: String
+  License_Number: Int
+  Last_Name: String
+  First_Name: String
+  Business_Name: String
+  Number: String
+  Street: String
+  License_Business_City: String
+  Business_State: String
+  Business_Email: String
+  Business_Phone_Number: String
+  Postcode: String
+  License_Status: String
+  Latitude: Float
+  Longitude: Float
+  Community: Int
+  Council_District: Int
+  Census_Tract: Int
+  BIN: Int
+  BBL: String
+  NTA: String
+}

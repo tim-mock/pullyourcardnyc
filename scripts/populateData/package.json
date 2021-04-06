@@ -1,0 +1,8 @@
+{
+    "name": "populate-data",
+    "version": "2.0.0",
+    "description": "Script to populate database with imported data",
+    "main": "index.js",
+    "type": "module",
+    "license": "Apache-2.0"
+  }
