@@ -1,5 +1,5 @@
 import { API } from "aws-amplify";
-import * as mutations from "../../src/graphql/mutations.js";
+import * as mutations from "../../frontend/src/graphql/mutations.js";
 
 input = {
   License_SL_No: item[8],

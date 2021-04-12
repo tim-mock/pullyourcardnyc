@@ -18,6 +18,7 @@ const NavigationButtonText = styled(Text)`
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  color: blue;
 `;
 const KeyboardAvoiding = styled(KeyboardAvoidingView)`
   position: absolute;

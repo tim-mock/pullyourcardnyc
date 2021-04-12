@@ -10,6 +10,8 @@ import HomePage from "./Screens/Protected/HomePage";
 import SignUp from "./Screens/NonProtected/SignUp";
 import Welcome from "./Screens/NonProtected/Welcome";
 import LogIn from "./Screens/NonProtected/LogIn";
+import MapScreen from "./Screens/Protected/MapScreen";
+import PromptLocation from "./Screens/Protected/PromptLocation";
 
 const Stack = createStackNavigator();
 
@@ -23,7 +25,9 @@ export default function Navigator({ navigation }) {
       <Stack.Navigator initialRouteName="PhoneInputScreen">
         {isSignedIn ? (
           <>
+            <Stack.Screen name="permissions" component={PromptLocation} />
             <Stack.Screen name="HomePage" component={HomePage} />
+            <Stack.Screen name="MapScreen" component={MapScreen} />
           </>
         ) : (
           <>

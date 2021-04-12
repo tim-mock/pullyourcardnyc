@@ -7,7 +7,8 @@ import { signIn } from "../../../Redux/Actions";
 
 const LogIn = ({ navigation }) => {
   const dispatch = useDispatch();
-  handleLogIn = () => {
+
+  const handleLogIn = () => {
     dispatch(signIn());
   };
 

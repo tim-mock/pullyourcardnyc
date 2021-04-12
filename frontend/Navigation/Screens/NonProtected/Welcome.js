@@ -4,11 +4,11 @@ import { CommonText } from "../../../Commons/Styles/CommonText";
 import { NavigationButton } from "../../../Commons/Styles/NavigationButton";
 
 const Welcome = ({ navigation }) => {
-  handleSignUp = () => {
+  const handleSignUp = () => {
     navigation.navigate("SignUp");
   };
 
-  handleLogIn = () => {
+  const handleLogIn = () => {
     navigation.navigate("LogIn");
   };
 
