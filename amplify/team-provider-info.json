@@ -15,7 +15,7 @@
       "function": {
         "importTable": {
           "deploymentBucketName": "amplify-pullyourcard-dev-130259-deployment",
-          "s3Key": "amplify-builds/importTable-627548486f7450624f48-build.zip"
+          "s3Key": "amplify-builds/importTable-5a4f54593948512b4149-build.zip"
         }
       }
     }

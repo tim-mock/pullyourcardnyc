@@ -11,7 +11,7 @@ export const fetchSearch = () => {
     const data = getFetchSearch(getState())
 
 
-    // const fetchSample = await API.graphql({query: queries.listDataTableNews} )
+    const fetchSample = await API.graphql({query: queries.listDataTableNews} )
 
     
     console.log("fetch api ", data);

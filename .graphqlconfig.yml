@@ -1,15 +1,18 @@
 projects:
-  pullYourCardDataTable:
-    schemaPath: src/graphql/schema.json
+  pullyourcard:
+    schemaPath: amplify/backend/api/pullyourcard/build/schema.graphql
     includes:
-      - src/graphql/**/*.js
+      - frontend/src/graphql/**/*.js
     excludes:
       - ./amplify/**
     extensions:
       amplify:
         codeGenTarget: javascript
         generatedFileName: ''
-        docsFilePath: src/graphql
+        docsFilePath: frontend/src/graphql
+        region: us-east-1
+        apiId: null
+        maxDepth: 2
 extensions:
   amplify:
     version: 3

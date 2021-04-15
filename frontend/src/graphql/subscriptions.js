@@ -27,9 +27,6 @@ export const onCreateDataTableNew = /* GraphQL */ `
       BIN
       BBL
       NTA
-      _version
-      _deleted
-      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -61,9 +58,6 @@ export const onUpdateDataTableNew = /* GraphQL */ `
       BIN
       BBL
       NTA
-      _version
-      _deleted
-      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -95,9 +89,6 @@ export const onDeleteDataTableNew = /* GraphQL */ `
       BIN
       BBL
       NTA
-      _version
-      _deleted
-      _lastChangedAt
       createdAt
       updatedAt
     }

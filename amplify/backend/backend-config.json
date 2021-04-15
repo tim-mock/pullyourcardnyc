@@ -8,19 +8,35 @@
   },
   "AppSync": {
     "Default": {
-        "ApiUrl": "https://hhrkqzztuffhvic3tome7kgrna.appsync-api.us-east-1.amazonaws.com/graphql",
-        "Region": "us-east-1",
-        "AuthMode": "API_KEY",
-        "ApiKey": "da2-w3t2uvfwgjahbfdmk2d6htwxfi",
-        "ClientDatabasePrefix": "pullYourCardDataTable-dev_API_KEY"
+      "ApiUrl": "https://hhrkqzztuffhvic3tome7kgrna.appsync-api.us-east-1.amazonaws.com/graphql",
+      "Region": "us-east-1",
+      "AuthMode": "API_KEY",
+      "ApiKey": "da2-w3t2uvfwgjahbfdmk2d6htwxfi",
+      "ClientDatabasePrefix": "pullYourCardDataTable-dev_API_KEY"
     },
     "pullYourCardDataTable-dev_AWS_IAM": {
-        "ApiUrl": "https://hhrkqzztuffhvic3tome7kgrna.appsync-api.us-east-1.amazonaws.com/graphql",
-        "Region": "us-east-1",
-        "AuthMode": "AWS_IAM",
-        "ClientDatabasePrefix": "pullYourCardDataTable-dev_AWS_IAM"
+      "ApiUrl": "https://hhrkqzztuffhvic3tome7kgrna.appsync-api.us-east-1.amazonaws.com/graphql",
+      "Region": "us-east-1",
+      "AuthMode": "AWS_IAM",
+      "ClientDatabasePrefix": "pullYourCardDataTable-dev_AWS_IAM"
     }
-}
-
-
+  },
+  "api": {
+    "pullyourcard": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "Big Tim's Mac Mini"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  }
 }
