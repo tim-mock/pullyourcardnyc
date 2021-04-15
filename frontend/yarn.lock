@@ -3470,7 +3470,7 @@ available-typed-arrays@^1.0.2:
 
 aws-amplify-react-native@^4.3.2:
   version "4.3.2"
-  resolved "https://registry.yarnpkg.com/aws-amplify-react-native/-/aws-amplify-react-native-4.3.2.tgz"
+  resolved "https://registry.yarnpkg.com/aws-amplify-react-native/-/aws-amplify-react-native-4.3.2.tgz#6be353e5c6baa4429977aae7751296cf83248cdd"
   integrity sha512-bun4/UIEGoMIHzYrmQLHBQB4Ulifl7ITb2sCIKWVWgnjEKutUg5aoGJiE8dPtNovUDmW+Ws8clb6H2bTFyo2vQ==
   dependencies:
     babel-preset-es2015 "^6.24.1"
@@ -3478,7 +3478,7 @@ aws-amplify-react-native@^4.3.2:
 
 aws-amplify@^3.3.26:
   version "3.3.26"
-  resolved "https://registry.yarnpkg.com/aws-amplify/-/aws-amplify-3.3.26.tgz"
+  resolved "https://registry.yarnpkg.com/aws-amplify/-/aws-amplify-3.3.26.tgz#91cb232cc40b6d93176f56ce1072189a79ce500f"
   integrity sha512-zlC2oJI0Ta3B9Vb0G4IIA9Ar+AqLDquWZTxTA7IwIWM0bVFShAVl7bVHpk5VJpUQC4vJCWq+DXJGqz1pa4jdpw==
   dependencies:
     "@aws-amplify/analytics" "4.0.17"

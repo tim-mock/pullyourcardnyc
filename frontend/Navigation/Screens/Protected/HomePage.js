@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import { View, Text } from "react-native";
 import { useDispatch } from "react-redux";
+import { fetchSearch } from "../../../APICalls";
 import CommonDropDown from "../../../Commons/CommonDropDown";
 import { CommonErrorText } from "../../../Commons/Styles/CommonErrorText";
 import { CommonText } from "../../../Commons/Styles/CommonText";
@@ -32,8 +33,11 @@ const HomePage = ({ navigation }) => {
     }
     if (zipCode && licenseValue) {
       setLicenseError(false);
+      setZipError(false)
       const data = { zipCode, licenseValue };
       dispatch(fetchZipType(data));
+
+      dispatch(fetchSearch())
     }
   };
 
@@ -47,7 +51,7 @@ const HomePage = ({ navigation }) => {
 
   return (
     <View>
-      {console.log(licenseValue)}
+     
       <View>
         <CommonText>
           <Text>Welcome to</Text>

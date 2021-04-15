@@ -8,8 +8,8 @@ const initialState = {
     longitude: -73.9855,
   },
   fetchSearch: {
-    type: "",
-    zipcode: "",
+    type: "gg",
+    zipcode: "gg",
   },
 };
 
