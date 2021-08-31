@@ -25,7 +25,7 @@ export default function Navigator({ navigation }) {
       <Stack.Navigator initialRouteName="PhoneInputScreen">
         {isSignedIn ? (
           <>
-            <Stack.Screen name="permissions" component={PromptLocation} />
+            {/* <Stack.Screen name="permissions" component={PromptLocation} /> */}
             <Stack.Screen name="HomePage" component={HomePage} />
             <Stack.Screen name="MapScreen" component={MapScreen} />
           </>

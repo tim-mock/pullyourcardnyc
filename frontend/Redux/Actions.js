@@ -17,3 +17,9 @@ export const fetchZipType = ({ zipCode, licenseValue }) => {
     payload: { zipCode, licenseValue },
   };
 };
+
+export const setSearchQuery = (data) => {
+  return {
+    type: types.SET_SEARCH_QUERY, payload: data
+  }
+}

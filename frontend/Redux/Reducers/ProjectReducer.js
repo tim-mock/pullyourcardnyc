@@ -11,6 +11,7 @@ const initialState = {
     type: "gg",
     zipcode: "gg",
   },
+  initialQuery: []
 };
 
 function ProjectReducer(state = initialState, action) {
@@ -30,6 +31,10 @@ function ProjectReducer(state = initialState, action) {
         ...state,
         fetchSearch: action.payload,
       };
+    case types.SET_SEARCH_QUERY:
+      return {
+        ...state, initialQuery: action.payload
+      }
     default:
       return state;
   }

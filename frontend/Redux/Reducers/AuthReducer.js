@@ -1,7 +1,7 @@
 import * as types from "../Types";
 
 const initialState = {
-  isSignedIn: false,
+  isSignedIn: true,
   name: "carl weezer",
 };
 

@@ -1,8 +1,8 @@
 import React from "react";
 import Navigator from "./Navigation/Navigator";
-import store from "./Redux/Store";
+import createStore from "./Redux/Store";
 import { Provider } from "react-redux";
-
+export const { store, persistor } = createStore()
 import Amplify from "aws-amplify";
 
 import awsExports from './aws-exports'

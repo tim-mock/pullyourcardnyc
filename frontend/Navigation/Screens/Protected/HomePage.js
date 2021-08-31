@@ -5,6 +5,7 @@ import { fetchSearch } from "../../../APICalls";
 import CommonDropDown from "../../../Commons/CommonDropDown";
 import { CommonErrorText } from "../../../Commons/Styles/CommonErrorText";
 import { CommonText } from "../../../Commons/Styles/CommonText";
+import PromptLocation from './PromptLocation'
 import {
   CommonTextInput,
   TouchableStyledSubmit,
@@ -38,6 +39,7 @@ const HomePage = ({ navigation }) => {
       dispatch(fetchZipType(data));
 
       dispatch(fetchSearch())
+      navigation.navigate('MapScreen')
     }
   };
 
@@ -49,9 +51,13 @@ const HomePage = ({ navigation }) => {
     setLicenseValue(value);
   };
 
+  const handleToMaps = () => {
+    navigation.navigate('MapScreen')
+  }
+
   return (
     <View>
-     
+     <PromptLocation />
       <View>
         <CommonText>
           <Text>Welcome to</Text>
@@ -87,6 +93,7 @@ const HomePage = ({ navigation }) => {
       </View>
       <View>
         <NavigationButton text={"submit"} onPress={handleSubmit} />
+        <NavigationButton text={"jump to map"} onPress={handleToMaps} />
       </View>
     </View>
   );
