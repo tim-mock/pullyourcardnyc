@@ -1,0 +1,2 @@
+# pullyourcardnyc
+Earlier I had a washer and dryer installed in my apartment. My landlord struggled with finding appropriate contractors possessing the proper legal certifications. I found a list of certified contractors on a public database. I downloaded this as JSON and uploaded it to an AWS server. I created a UI with the ability to query specific fields. Contractor locations and phone numbers were displayed to a map using the react-native-maps API. 
